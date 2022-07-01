@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:startDestination="@id/navigationDiscoverFragment"
+    android:id="@+id/my_navbar">
+
+    <fragment
+        android:id="@+id/navigationDiscoverFragment"
+        android:name="com.tugceaksoy.vitrinapp.ui.discover.DiscoverFragment"
+        android:label="fragment_discover"
+        tools:layout="@layout/fragment_discover" >
+        <action
+            android:id="@+id/toShopsDetailFragment"
+            app:destination="@id/navigationShopDetail" />
+        <action
+            android:id="@+id/toProductsDetailFragment"
+            app:destination="@id/navigationProductDetail" />
+        <action
+            android:id="@+id/toCollectionDetail"
+            app:destination="@id/navigationCollectionsDetail" />
+    </fragment>
+    <fragment
+        android:id="@+id/navigationProductDetail"
+        android:name="com.tugceaksoy.vitrinapp.ui.products_detail.ProductsDetailFragment"
+        android:label="fragment_products_detail"
+        tools:layout="@layout/fragment_products_detail" >
+        <action
+            android:id="@+id/backproductToDiscover"
+            app:destination="@id/navigationDiscoverFragment" />
+        <argument
+            android:name="products"
+            app:nullable="true"
+            android:defaultValue="@null"
+            app:argType="com.tugceaksoy.vitrinapp.data.model.discover.ProductList" />
+    </fragment>
+    <fragment
+        android:id="@+id/navigationCollectionsDetail"
+        android:name="com.tugceaksoy.vitrinapp.ui.collection_details.CollectionsDetailFragment"
+        android:label="fragment_collections_detail"
+        tools:layout="@layout/fragment_collections_detail" >
+        <action
+            android:id="@+id/backcollectionToDiscover"
+            app:destination="@id/navigationDiscoverFragment" />
+        <argument
+            android:name="collection"
+            app:nullable="true"
+            android:defaultValue="@null"
+            app:argType="com.tugceaksoy.vitrinapp.data.model.discover.CollectionList" />
+    </fragment>
+    <fragment
+        android:id="@+id/navigationShopDetail"
+        android:name="com.tugceaksoy.vitrinapp.ui.shops_detail.ShopsDetailFragment"
+        android:label="fragment_shops_detail"
+        tools:layout="@layout/fragment_shops_detail" >
+        <action
+            android:id="@+id/backshoptoDiscover"
+            app:destination="@id/navigationDiscoverFragment" />
+        <argument
+            android:name="shoparg"
+            app:nullable="true"
+            android:defaultValue="@null"
+            app:argType="com.tugceaksoy.vitrinapp.data.model.discover.ShopList" />
+    </fragment>
+</navigation>
