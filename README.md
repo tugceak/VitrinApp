@@ -1,7 +1,7 @@
 
 # VITRIN
 
-It is a simple android application that Android Fetch Products, Categories, Collections and Shops.
+It is a simple android application that Fetch Products, Categories, Collections and Shops.
 
 
 
