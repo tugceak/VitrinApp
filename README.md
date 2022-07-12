@@ -1,4 +1,4 @@
-# [A  Android Fetch Products, Categories, Collections and Shops with Kotlin + MVVM + Retrofit2 + Live Data + Glide](https://github.com/tugceak/VitrinApp)
+# [An  Android Fetch Products, Categories, Collections and Shops with Kotlin + MVVM + Retrofit2 + Live Data + Glide](https://github.com/tugceak/VitrinApp)
 
 [![kotlin](https://img.shields.io/badge/Kotlin-1.3.xxx-brightgreen.svg)](https://kotlinlang.org/)[![Kotlin-Android-Extensions](https://img.shields.io/badge/Kotlin--Android--Extensions-plugin-red.svg)](https://kotlinlang.org/docs/tutorials/android-plugin.html) [![MVVM](https://img.shields.io/badge/Clean--Code-MVVM-brightgreen.svg)](https://github.com/googlesamples/android-architecture) 
 
